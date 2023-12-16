@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="menu">
+
+    </div>
+    <div class="add_towar">
+        <div class="form">
+        
+        
+            <label for="">Ціна</label>
+            <br><input type="number" class="towar_info" id="towar_name"><br><br>  
+
+           <label>Тип</label><br>
+            <select name="" id="type">
+                <option value=""></option>
+                <option value="shirt">сорочка</option>
+                <option value="dress">сукня</option>
+                <option value="skinny">кофта</option>
+                <option value="jeans">джинси</option>
+                <option value="boots">кросівки</option>
+                <option value="accessories">аксесуари</option>
+                <option value="head">шапка</option>
+                <option value="scarf">шарф</option>
+                <option value="сap">кепка</option>
+                <option value="gloves">рукавиці</option>
+                <option value="jackets">куртки</option>
+            </select><br><br>
+
+
+        <label>Бренд</label><br>
+            <select name="brend" id="brend"> 
+                <option value=""></option>
+                <option value="nike">nike</option>
+                <option value="adidas">adidas</option>
+                <option value="stone_island">stone_island</option>
+                <option value="c.p.company">c.p.company</option>
+                <option value="puma">puma</option>
+                <option value="arterix">arterix</option>
+                <option value="charchart">charchart</option>
+                <option value="new_balanse">new_balanse</option>
+                
+            </select><br><br>
+
+
+           <label>Капішон</label><br>
+           <input type="checkbox" id="towar_hoot"><br><br>
+
+
+           <label>Колір</label><br>
+        <input type="text" class="towar_info" id="towar_color"><br><br>
+
+
+            <label>Стать</label><br>
+            <select name="" id="towar_gender">
+                <option value=""></option>
+                <option value="man">Чоловік</option>
+                <option value="woman">Жінка</option>
+            </select><br><br>
+
+
+          <label>Розмір</label><br>
+            <select name="" id="towar_size">
+                <option value=""></option>
+                <option value="37">37</option>
+                <option value="38">38</option>
+                <option value="39">39</option>
+                <option value="40">40</option>
+                <option value="148">148</option>
+                <option value="154">154</option>
+                <option value="158">159</option>
+                <option value="164">164</option>
+                <option value="170">170</option>
+                <option value="176">176</option>
+                <option value="184">184</option>
+                <option value="190">190</option>
+
+                
+            </select>  <br><br>
+
+
+            <label>Матеріал</label><br>
+            <select name="" id="towar_material">
+                <option value=""></option>
+                <option value="vovna">вовна</option>
+                <option value="jean">джинс</option>
+                <option value="gore-tex">гортекс</option>
+                <option value="zamha">замша</option>
+                <option value="flease">фліс</option>
+          
+                
+            </select><br><br>
+
+
+           <label for="">Опис</label>
+            <br><input type="text" class="towar_info" id="towar_description"><br><br>
+
+
+
+         <label>Принт</label><br>
+           <input type="checkbox" id="towar_print"><br><br>
+
+
+        </div>
+    </div>
+    <div class="towars">
+
+    </div>
+
+    
+    <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-auth-compat.js"></script>
+    <script src="../firebase/config.js"></script>
+    <script src="../scripts/admin_page.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
