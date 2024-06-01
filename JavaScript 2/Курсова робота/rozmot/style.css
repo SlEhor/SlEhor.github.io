@@ -1,0 +1,106 @@
+.menu{
+    width: 80%;
+    margin-left: 10%;
+    height: 70px;
+    background: url(rozmot.jpg);
+    display: flex;
+    justify-content: space-evenly;
+    /*overflow: hidden;*/
+}
+.menu_button{
+    width: 9%;
+    height: 70px;
+    background: linear-gradient(to right, rgba(255, 166, 0, 0) 50% ,rgb(0, 1, 79) 50%);
+    transition: all 0.25s linear;
+    background-size: 200% 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu_button:hover{
+    background-position: -100% 20%;
+
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+   <div class="menu">
+        <div class="left_buttons">
+            <a href="" class="menu_button"><img src="sweater.png" alt="" class="logo"></a>
+            <a href="" class="menu_button_global">Головна</a>
+        </div>
+        <div class="right_buttons">
+            <a href="" class="menu_button_koshik">Кошик</a>
+            <a href="" class="menu_button_sign">Вхід/Вихід</a>
+             <a href="" class="admin">Адмін</a>
+            <a href="" class="menu_button"><img src="profile.png" alt="" class="profile"></a>
+           
+        </div>
+   </div>
+
+    <div class="filter">
+        <label>Назва</label>
+        <input></div>
+
+       
+        
+       
+<a><a><br>
+    <div class="dropdown-label">
+        <label>Тип</label>
+        <div class="dropdown-content" onchange="showSelectedType()">
+            <select id="typeSelect">
+                <option value="shirt">сорочка</option>
+                <option value="dress">сукня</option>
+                <option value="skinny">кофта</option>
+                <option value="jeans">джинси</option>
+                <option value="boots">кросівки</option>
+                <option value="accessories">аксесуари</option>
+                <option value="head">шапка</option>
+                <option value="scarf">шарф</option>
+                <option value="сap">кепка</option>
+                <option value="gloves">рукавиці</option>
+                <option value="jackets">куртки</option>
+                <option value="pants">штани</option>
+                
+            </select>
+        </div>
+        
+    </div>
+    <div id="selectedType"></div>
+
+
+
+
+
+    
+
+    </div>
+
+
+    <div class="one_towar">
+            <div class="photo"><img src="one towar.webp" class="photo2" alt=""></div>
+            <div class="down_block">
+                <div class="name" align="center"><h5>ultra super not negro</h5></div>
+                <div class="buy">
+                    <div class="price">120000$</div>
+                    <button><img src="koshik.svg" class="koshik2" alt=""></button>
+                </div>
+                <div class="color">white</div>
+                <div class="size">129</div>
+            </div>
+        </div>
+    </div>
