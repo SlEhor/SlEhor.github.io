@@ -1,0 +1,354 @@
+.menu{
+    width: 100%;
+    height: 60px;
+
+    background-color:  rgb(185, 185, 186);
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 7px;
+    margin: 3px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+.filter{
+    width: 18%;
+    height: 600px;
+    background-color: rgb(203, 203, 203);
+    float: left;
+    margin: 7px;
+    border-radius: 6px;
+    font-family: 'Courier New', Courier, monospace;
+    
+    position: fixed;
+    top: 67px;
+}
+.towars{
+    width:  80%;
+    max-height: 10000px;
+    margin: 5px;
+    background-color: rgb(218, 218, 218);
+    border-radius: 6px;
+    font-family: 'Courier New', Courier, monospace;
+    float:right;
+    margin-top: 74px;
+    display: flex;
+    
+    flex-wrap: wrap;
+}
+body{
+    background: url('/sweater.png');
+    background-size: 1.75%;
+    background: fixed;
+}
+.left_buttons{
+    height: 60px;
+    width: 150px;
+   
+}
+.logo{
+    max-width: 140px;
+    max-height: 55px;
+    margin: 2.5px;
+}
+.menu_button_global{
+    max-width: 100px;
+    max-height: 30px;
+    float: right;
+   font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    margin-top: 15px;
+    text-decoration: none;
+    margin-bottom: 15px;
+    margin-right: 2.5px;
+    background-color: rgb(191, 191, 204);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: color 0.3s;
+    transition: box-shadow 0.3s;
+}
+.menu_button_global:hover{
+    
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    
+}
+.right_buttons{
+    height: 60px;
+    width: 350px;
+    display: flex;
+
+
+}
+.menu_button_koshik{
+    max-width: 100px;
+    max-height: 30px;
+    float: left;
+   font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    align-items: center ;
+    margin-right: 2.5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: rgb(191, 191, 204);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: color 0.3s;
+    transition: box-shadow 0.3s;
+}
+.menu_button_koshik:hover{
+
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    
+}
+
+.menu_button_sign{
+    width: 100px;
+    height: 30px;
+   font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    margin-top: 13px;
+    text-decoration: none;
+    margin-bottom: 6px;
+    margin-right: 2.5px;
+    background-color: rgb(191, 191, 204);
+    border-radius: 4px;
+    margin: 15px;
+    align-items: center;
+    cursor: pointer;
+    transition: color 0.3s;
+    transition: box-shadow 0.3s;
+    
+}
+.menu_button_sign:hover{
+    
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+   
+}
+
+.admin{
+    max-width: 100px;
+    max-height: 30px;
+    float: right;
+   font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    margin-top: 15px;
+    text-decoration: none;
+    margin-bottom: 15px;
+    margin-right: 2.5px;
+    background-color: rgb(191, 191, 204);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: color 0.3s;
+    transition: box-shadow 0.3s;
+}
+.profile{
+    max-width: 140px;
+    max-height: 55px;
+    margin: 2.5px;
+    float:right;
+}
+.one_towar{
+    width: 285px;
+    height: 500px;
+    border: 1px solid black;
+    margin: 10px;
+   background-color: rgb(212, 208, 208);
+    border-radius: 3px;
+    box-shadow: 1px 1px 4px rgb(167, 167, 167);
+    
+}
+.photo{
+    width: 265px;
+    height: 315px;
+    border-radius: 3px;
+    margin: 7.5px;
+}
+.name{
+    height: 25px;
+    align-items: center;
+    justify-content: center;
+   
+    width: 270px;
+    font-family: "Rubik Mono One", monospace;
+    margin: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.buy{
+    width: 270px;
+    margin: 5px;
+    height: 27px;
+    margin-top: 25px;
+   
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+.price{
+    width: 230px;
+    height: 27px;
+    
+    font-size: larger;
+    float: left;
+    font-family: cursive;
+}
+.koshik{
+    width: 20px;
+    height: 27px;
+     text-decoration: none;
+    
+    float: right;
+}
+
+.color{
+    width: 270px;
+    height: 25px;
+    margin: 5px;
+    font-size: larger;
+    font-family: cursive;
+}
+.size{
+    width: 270px;
+    height: 20px;
+    margin: 2px;
+    font-size: larger;
+    font-family:cursive;
+}
+.photo2{
+    width: 265px;
+    height: 315px;
+    border-radius: 3px;
+    
+}
+.koshik2{
+    width: 25px;
+    height: 25px;
+    border-radius: 3px;
+    
+    float: right;
+}
+
+
+.wrapper{
+    margin: 3.5% 3.5%;
+    position: relative;
+    width: 93%;
+    border-radius: 10px;
+    
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 7.5px;
+   
+}
+input[type="range"]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 87.5%;
+    outline: none;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    background-color: transparent;
+    pointer-events: none;
+    
+}
+.slider-track{
+    width: 80%;
+    height: 5px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    border-radius: 5px;
+    
+}
+input[type="range"]::-webkit-slider-runnable-track{
+    -webkit-appearance: none;
+    height: 5px;
+}
+input[type="range"]::-moz-range-track{
+    -moz-appearance: none;
+    height: 5px;
+}
+input[type="range"]::-ms-track{
+    appearance: none;
+    height: 5px;
+}
+input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 1.7em;
+    width: 1.7em;
+    background-color: #3264fe;
+    cursor: pointer;
+    margin-top: -9px;
+    pointer-events: auto;
+    border-radius: 50%;
+}
+input[type="range"]::-moz-range-thumb{
+    -webkit-appearance: none;
+    height: 1.7em;
+    width: 1.7em;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #3264fe;
+    pointer-events: auto;
+}
+input[type="range"]::-ms-thumb{
+    appearance: none;
+    height: 1.7em;
+    width: 1.7em;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #3264fe;
+    pointer-events: auto;
+}
+input[type="range"]:active::-webkit-slider-thumb{
+    background-color: #ffffff;
+    border: 3px solid #3264fe;
+}
+.values{
+    background-color: #ffffff;
+    width: 40%;
+    position: relative;
+    margin: auto;
+    padding: 5px 0;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 12.5px;
+    color: #000000;
+}
+.values:before{
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-top: 15px solid #ffffff;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    margin: auto;
+    bottom: -14px;
+    left: 0;
+    right: 0;
+}
+
+
+
+
+
+
+
+
+
+

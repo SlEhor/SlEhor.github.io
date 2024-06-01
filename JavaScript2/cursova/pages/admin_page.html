@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/admin_page.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="menu">
+        <button type="button" class="btn btn-success" onclick="yes_block('add_towar')">Додати товар</button>
+        <a href="file:///C:/Users/StudyLink/Desktop/StudyLink/%D0%A8%D0%B0%D1%84%D1%96%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9%20%D0%84%D0%B3%D0%BE%D1%80/JavaScript%202/%D0%9A%D1%83%D1%80%D1%81%D0%BE%D0%B2%D0%B0%20%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0/index.html" class="back">Повернутися</a>
+    </div>
+    <div class="add_towar" id="add_towar">
+        <div class="form">
+            <h3 align="center">Додавання</h3>
+        
+            <label>Назва</label><br>
+            <input type="text" class="towar_info form-control" id="towar_name"><br>
+
+
+
+            <label for="">Ціна</label>
+            <br><input type="number" class="towar_info form-control" id="towar_price"><br><br>  
+            
+
+            
+
+           <label>Тип</label><br>
+            <select name="" id="towar_type" class="form-select" aria-label="Default select example">
+                <option value=""></option>
+                <option value="shirt">сорочка</option>
+                <option value="dress">сукня</option>
+                <option value="skinny">кофта</option>
+                <option value="jeans">джинси</option>
+                <option value="boots">кросівки</option>
+                <option value="accessories">аксесуари</option>
+                <option value="head">шапка</option>
+                <option value="scarf">шарф</option>
+                <option value="сap">кепка</option>
+                <option value="gloves">рукавиці</option>
+                <option value="jackets">куртки</option>
+                <option value="pants">штани</option>
+            </select><br><br>
+
+
+        <label>Бренд</label><br>
+            <select name="brend" id="towar_brend" class="form-select" aria-label="Default select example"> 
+                <option value=""></option>
+                <option value="nike">nike</option>
+                <option value="adidas">adidas</option>
+                <option value="stone_island">stone_island</option>
+                <option value="c.p.company">c.p.company</option>
+                <option value="puma">puma</option>
+                <option value="arterix">arterix</option>
+                <option value="charchart">charchart</option>
+                <option value="new_balanse">new_balanse</option>
+                
+            </select><br><br>
+
+
+            <label>Фото</label><br>
+            <input type="text" class="towar_info form-control" id="towar_photo"><br><br>
+
+           <label>Капішон</label><br>
+           <input type="checkbox" id="towar_hoot"><br><br>
+
+
+           <label>Колір</label><br>
+        <input type="text" class="towar_info form-control" id="towar_color"><br><br>
+
+
+            <label>Стать</label><br>
+            <select name="" id="towar_gender" class="form-select" aria-label="Default select example">
+                <option value=""></option>
+                <option value="man">Чоловік</option>
+                <option value="woman">Жінка</option>
+            </select><br><br>
+
+
+          <label>Розмір</label><br>
+            <select name="" id="towar_size" class="form-select" aria-label="Default select example">
+                <option value=""></option>
+                <option value="37">37</option>
+                <option value="38">38</option>
+                <option value="39">39</option>
+                <option value="40">40</option>
+                <option value="148">41</option>
+                <option value="154">42</option>
+                <option value="148">148</option>
+                <option value="154">154</option>
+                <option value="158">159</option>
+                <option value="164">164</option>
+                <option value="170">170</option>
+                <option value="176">176</option>
+                <option value="184">184</option>
+                <option value="190">190</option>
+
+                
+            </select>  <br><br>
+
+
+           
+          
+                
+            </select><br><br>
+
+
+           <label for="">Опис</label>
+            <br><input type="text" class="towar_info" id="towar_description"><br><br>
+
+
+
+         
+           
+
+
+            
+
+            <button type="button" class="btn btn-dark" onclick="none_block('add_towar')">Видалити все</button>
+            <button type="button" class="btn btn-success" onclick="add_towar()">Додати товар</button>
+            
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="add_towar" id="edit_towar">
+        <div class="form">
+            <h3 align="center" id="nigga">Редагування <button type="button" class="btn btn-dark" onclick="none_block('edit_towar')">Закрити</button></h3>
+        
+            <label>Назва</label><br>
+            <input type="text" class="towar_info form-control" id="towar_name_edit"><br><br>
+
+            <label for="">Ціна</label>
+            <br><input type="number" class="towar_info form-control" id="towar_price_edit"><br><br>  
+            
+
+            
+
+           <label>Тип</label><br>
+            <select name="" id="towar_type_edit" class="form-select" aria-label="Default select example">
+                <option value=""></option>
+                <option value="shirt">сорочка</option>
+                <option value="dress">сукня</option>
+                <option value="skinny">кофта</option>
+                <option value="jeans">джинси</option>
+                <option value="boots">кросівки</option>
+                <option value="accessories">аксесуари</option>
+                <option value="head">шапка</option>
+                <option value="scarf">шарф</option>
+                <option value="сap">кепка</option>
+                <option value="gloves">рукавиці</option>
+                <option value="jackets">куртки</option>
+            </select><br><br>
+
+
+        <label>Бренд</label><br>
+            <select name="brend" id="towar_brend_edit" class="form-select" aria-label="Default select example"> 
+                <option value=""></option>
+                <option value="nike">nike</option>
+                <option value="adidas">adidas</option>
+                <option value="stone_island">stone_island</option>
+                <option value="c.p.company">c.p.company</option>
+                <option value="puma">puma</option>
+                <option value="arterix">arterix</option>
+                <option value="charchart">charchart</option>
+                <option value="new_balanse">new_balanse</option>
+                
+            </select><br><br>
+
+            <label>Фото</label><br>
+            <input type="text" class="towar_info form-control" id="towar_photo_edit"><br><br>
+
+
+           <label>Капішон</label><br>
+           <input type="checkbox" id="towar_hoot_edit"><br><br>
+
+
+           <label>Колір</label><br>
+        <input type="text" class="towar_info form-control" id="towar_color_edit"><br><br>
+
+
+            <label>Стать</label><br>
+            <select name="" id="towar_gender_edit" class="form-select" aria-label="Default select example">
+                <option value=""></option>
+                <option value="man">Чоловік</option>
+                <option value="woman">Жінка</option>
+            </select><br><br>
+
+
+          <label>Розмір</label><br>
+            <select name="" id="towar_size_edit" class="form-select" aria-label="Default select example">
+                <option value=""></option>
+                <option value="37">37</option>
+                <option value="38">38</option>
+                <option value="39">39</option>
+                <option value="40">40</option>
+                <option value="148">41</option>
+                <option value="154">42</option>
+                <option value="158">159</option>
+                <option value="164">164</option>
+                <option value="170">170</option>
+                <option value="176">176</option>
+                <option value="184">184</option>
+                <option value="190">190</option>
+
+                
+            </select>  <br><br>
+
+
+            <br><br>
+
+
+           <label for="">Опис</label>
+            <br><input type="text" class="towar_info_edit" id="towar_description_edit"><br><br>
+
+
+
+        
+           
+
+
+            <button type="button" class="btn btn-success" id="savechanges">Зберегти зміни</button>
+
+            <button type="button" class="btn btn-dark" onclick="none_block('edit_towar')">Закрити</button>
+             </div>
+            
+       
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+   
+    <div class="towars">
+        <table>
+            <thead>
+                <tr>
+                <th class="black">№</th>
+                    <th class="black">Назва</th>
+                    
+                    <th class="black">Тип</th>
+                    <th class="black">Бренд</th>
+                    <th class="black">Фото</th>
+                    <th class="black">Опис</th>
+                    <th class="black">Ціна</th>
+                    
+                    <th class="black">Стать</th>
+                    <th class="black">Розмір</th>
+                    
+                
+                    <th class="black">Капішон</th>
+                    <th class="black">Редагування товару</th>
+                    <th class="black">Видалення</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                <tr>
+                    <td class="black"></td>
+                    <td class="black"></td>
+                    <td class="black"></td>
+                    <td class="black"></td>
+                    <td class="black"></td>
+                    <td class="black"></td>
+                    <td class="black"></td>
+                    <td class="black"></td>
+                    <td class="black"></td>
+                    <td class="black"></td>
+                    
+                    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    
+    <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-auth-compat.js"></script>
+    <script src="../firebase/config.js"></script>
+    <script src="../scripts/admin_page.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
